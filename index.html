@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
     <link rel="shortcut icon" href="assets/img3.png" type="image/x-icon">
+    
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
             .manrope {
@@ -25,18 +28,18 @@
     </script>
 
 </head>
-<body class="max-w-full mx=auto">
+<body class="">
     <header>
       <div class="navbar bg-base-100 flex justify-between items-center p-5 gap-10">
       <div class="flex">
-        <a class="btn btn-ghost text-2xl font-extrabold inline-flex items-center gap-2"><div class="bg-[#ABEF5F] w-8 h-8 rounded-full"><img src="assets/pngwing.com (5).png" class="max-w-full py-1" alt=""></div>Rinterio</a>
+        <a class="btn btn-ghost text-2xl font-extrabold inline-flex items-center gap-2"><div class="bg-[#ABEF5F] w-8 h-8 rounded-full "><img src="assets/pngwing.com (5).png" class="max-w-full py-1" alt=""></div>Rinterio</a>
       </div>   
-        <div class="flex text-center text-md font-bold justify-between gap-5 max-md:hidden">
-          <a class="link link-hover">Home</a>
-          <a class="link link-hover">Service</a>
-          <a class="link link-hover">Portfolio</a>
-          <a class="link link-hover">Blogs</a>
-          <a class="link link-hover">Contact Us</a>
+        <div class="flex text-center text-md font-bold justify-between gap-5 max-lg:hidden">
+          <a class="link link-hover" href="#home">Home</a>
+          <a class="link link-hover" href="#work">Service</a>
+          <a class="link link-hover" href="#portfolio">Portfolio</a>
+          <a class="link link-hover" href="#news">Blogs</a>
+          <a class="link link-hover" href="#contact">Contact Us</a>
         </div>
         <div class="flex justify-around items-center gap-3  max-md:hidden">
           <div class="navbar-end">
@@ -55,77 +58,100 @@
               </svg>
             </button>
             </div>
-          <div class="dropdown dropdown-end cursor ">
-            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
-              <div class="indicator">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="h-6 w-6"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor">
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
-                </svg>
+            <div class="flex">
+              <div class="dropdown dropdown-end">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle mr-3">
+                  <div class="indicator">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-6 w-6"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
+                    </svg>
+                    <span class="badge badge-sm indicator-item">8</span>
+                  </div>
+                </div>
+                <div
+                  tabindex="0"
+                  class="card card-compact dropdown-content bg-base-100 z-[1] mt-3 w-52 shadow">
+                  <div class="card-body">
+                    <span class="text-lg font-bold">8 Items</span>
+                    <span class="text-info">Subtotal: $999</span>
+                    <div class="card-actions">
+                      <button class="btn btn-primary btn-block">View cart</button>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            </div>
-            <div> <button class="bg-[#ABEF5F] text-black p-1 px-2 rounded-2xl inline-flex gap-2 items-center font-bold  ">Book Consult <div class="bg-black w-6 h-6 rounded-full"><img src="assets/arrow.png" class="max-w-full p-1" alt=""></div></button>
-          </div>
-        </div> 
-          <div class="flex-end md:hidden">
-            <button class="btn btn-square btn-ghost">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                class="inline-block h-8 w-8 stroke-current">
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"></path>
-              </svg>
-            </button>
-          </div>
-              
-   
         
+
+          <a href="#login"> <button herf="#login" class=" btn bg-[#ABEF5F] text-black p-2 px-3 hover:bg-[#a5ec53] rounded-2xl flex gap-2 items-center font-extrabold w-40 ">Book Consult <div class="bg-black w-6 h-6 rounded-full"><img src="assets/arrow.png" class="max-w-full p-1" alt=""></div></button></a>
+          
+        </div> 
+      </div>
+      <div class="flex md:hidden dropdown dropdown-bottom dropdown-end"> 
+        <button class="btn btn-square btn-ghost hover:bg-[#acef5fc1] w-12 h-12 p-2 rounded-full ">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            class="inline-block h-8 w-8 stroke-current">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>    
+          <ul tabindex="0" class="dropdown-content menu bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
+            <li>  <a class="link link-hover" href="#home">Home</a></li>
+              <li><a class="link link-hover" href="#work">Service</a></li>
+             <li> <a class="link link-hover" href="#portfolio">Portfolio</a></li>
+              <li><a class="link link-hover" href="#news">Blogs</a></li>
+             <li> <a class="link link-hover" href="#contact">Contact Us</a></li>
+          </ul>
+        </div>
+      </div>        
       </div>
     </header>
-    <main >
-        <section class="c1 mt-10">
+    <main class="max-w-full mx-auto">
+        <section class="c1 mt-10" id="home">
            <div class="flex  flex-col justify-center items-center p-24">
             <div><img src="assets/banner.png" class="max-w-full" alt=""></div>
             <div class="text-center max-w-3xl">
                 <h2 class="text-5xl font-extrabold my-5">A barn house of this design has a striking appearance</h2>
                 <p class="text-sm my-3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
-                <button class="btn-lg bg-[#ABEF5F] inline-flex items-center gap-2 max-w-52 rounded-3xl px-5 p-3 text-md font-bold"> <div class="bg-black w-6 h-6 rounded-full"><img src="assets/arrow.png" class="max-w-full p-1" alt=""></div>View Details</button>
+                <button class="btn bg-[#ABEF5F] inline-flex items-center gap-2 max-w-52 my-5 rounded-3xl px-5 py-2 text-lg font-bold"> <div class="bg-black w-6 h-6 rounded-full"><img src="assets/arrow.png" class="max-w-full p-1" alt=""></div>View Details</button>
             </div>
            </div>
         </section>
-        <section class="c2 mt-10 bg-[#F4F4F4]">
+        <!-- about us scetion -->
+        <section class="c2 mt-10 px-2 bg-[#F4F4F4]" >
            <div class="flex max-md:flex-col justify-center items-center p-5 gap-10">
+            
             <div class="left max-w-1/2 p-8">
                 <div class="relative -left-16"><img src="assets/Vector.png" alt=""></div>
-                <button class="btn-lg bg-white inline-flex gap-2 max-w-52 rounded-3xl px-5 p-3 text-md font-bold shadow-sm">About Us</button>
+                <button class="btn bg-white inline-flex gap-2 max-w-52 rounded-3xl px-5 p-3 text-md font-extrabold shadow-sm">About Us</button>
                <div class="w-3/4">
                 <h2 class="font-bold text-5xl my-5 ">We design thoughtful, liveable spaces</h2>
                 <p class="text-sm my-5">The barn house captivates with its blend of rustic charm and 
                     modern sophistication, featuring weathered wood, sleek metal accents.</p>
                </div>
-                <div>
-                    <div class="card flex shadow-md rounded-lg max-h-40 gap-10 items-center my-5 p-5">
+                <div class="">
+                    <div class="flex shadow-md rounded-lg max-h-64 min-h-16 gap-10 items-center my-5 p-5">
                         <div><img src="assets/commercial.png" class="max-w-full" alt=""></div>
                          <div>
                             <h3 class="font-bold">Commercial</h3>
                             <p class="text-sm my-3 w-3/4">The barn house captivates with its blend of rustic charm and modern.</p>
                          </div>
                     </div>
-                    <div class="card flex shadow-md rounded-lg max-h-40 gap-10 items-center my-5 p-5">
+                    <div class="flex shadow-md rounded-lg max-h-64 min-h-16 gap-10 items-center my-5 p-5">
                         <div><img src="assets/residential.png" class="max-w-full" alt=""></div>
                          <div>
                             <h3 class="font-bold">Residential</h3>
@@ -134,15 +160,49 @@
                     </div>
                 </div>
             </div>            
-            <div class="right rounded-lg"><img src="assets/Rectangle.png" class="max-w-full" alt=""></div>
+           
+                <div class="right rounded-lg">
+                    <img src="assets/Rectangle.png" class="max-w-full" alt="">
+                 </div>
+
            </div>
 
         </section>
-        <section class="c3 bg-[#F4F4F4]">
+        <!-- more about  -->
+         <section class="c3 bg-[#F4F4F4] "> 
+          <div class="flex justify-center items-center p-20  "> 
+            <div class="grid max-md:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-20 gap-10 rounded-xl bg-white p-8 px-20 w-full">
+              <div class="count1 hover:bg-gray-100 flex flex-col justify-center items-center text-center p-5 rounded-lg">
+                <div class="w-6 mb-2"><img src="assets/comment.png" class="max-w-full" alt=""></div>
+                <h2 class="font-bold text-2xl my-1">235+</h2>
+                <p class="text-sm text-gray-400">Happy Client Review</p>
+              </div>
+              <div class="count2 hover:bg-gray-100 flex flex-col justify-center items-center text-center p-5 rounded-lg">
+                <div class="w-6 mb-2"><img src="assets/office-building.png" class="max-w-full" alt=""></div>
+                <h2 class="font-bold text-2xl my-1">50+</h2>
+                <p class="text-sm text-gray-400">Work Departments</p>
+              </div>
+              <div class="count3 hover:bg-gray-100 flex flex-col justify-center items-center text-center p-5 rounded-lg">
+                <div class="w-6 mb-2"><img src="assets/people.png" class="max-w-full" alt=""></div>
+                <h2 class="font-bold text-2xl my-1">30k+</h2>
+                <p class="text-sm text-gray-400">Our Happy Client</p>
+              </div>
+              <div class="count4 hover:bg-gray-100 flex flex-col justify-center items-center text-center p-5 rounded-lg">
+                <div class="w-6 mb-2"><img src="assets/user.png" class="max-w-full" alt=""></div>
+                <h2 class="font-bold text-2xl my-1">307+</h2>
+                <p class="text-sm text-gray-400">Staff Members</p>
+              </div>
+            </div>
+          </div>
+         </section>
+        <!-- working process section  -->
+        <section class="c4 bg-[#F4F4F4] px-2" id="work">
             <div class="flex flex-col justify-center items-center text-center py-10 ">
-            <button class="btn-lg bg-white inline-flex gap-2 max-w-52 rounded-3xl px-5 p-3 text-md font-bold shadow-sm"><img src="assets/pngwing.com (5).png" class="w-8" alt="">How We Works</button>
+            <button class="btn bg-white inline-flex gap-2 max-w-52 rounded-3xl px-5 p-3 text-md font-bold shadow-sm"><img src="assets/pngwing.com (5).png" class="w-8" alt="">How We Works</button>
+               <div class="max-w-2xl">
                 <h2 class="font-bold text-5xl my-3 ">Our Work Process</h2>
-                <p class="text-sm my-5 w-3/4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <p class="text-sm my-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+               </div>
             </div>
             <div class="flex justify-center">
                 <div class="grid max-sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 p-10 ">
@@ -176,11 +236,14 @@
                 </div>
             </div>         
         </section>
-        <section class="c4 mt-10">
+        <!-- portfolio section  -->
+        <section class="c5 mt-10 px-2 " id="portfolio" >
             <div class="flex flex-col items-center text-center py-10 ">
-                <button class="btn-lg bg-[#acef5f77] inline-flex gap-2 rounded-3xl px-4 p-2 mb-5 text-md font-bold shadow-sm"><img src="assets/pngwing.com (5).png" class="w-8" alt="">Explore our Latest works</button>
-                    <h2 class="font-bold text-5xl my-3 ">Our Latest Portfolio</h2>
-                    <p class="text-sm my-5 w-3/4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <button class="btn bg-[#acef5f77] inline-flex gap-2 rounded-3xl px-4 p-2 mb-5 text-md font-bold shadow-sm"><img src="assets/pngwing.com (5).png" class="w-8" alt="">Explore our Latest works</button>
+                    <div class="max-w-2xl">
+                      <h2 class="font-bold text-5xl my-3 ">Our Latest Portfolio</h2>
+                    <p class="text-sm my-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                    </div>
                 </div>
             <div class="flex flex-col justify-center items-center gap-y-8">
                 <div class="grid grid-cols-3 max-lg:grid-cols-1 gap-10 px-10 max-w-7xl "  >
@@ -219,11 +282,14 @@
                 </div>
             </div>
         </section>
-        <section class="c5 mt-20 bg-[#F4F4F4]">
+        <!-- news section  -->
+        <section class="c6 mt-20 bg-[#F4F4F4] py-10 " id="news">
             <div class="flex flex-col items-center text-center py-10  ">
-                <button class="btn-lg bg-[#acef5f77] inline-flex gap-2 rounded-3xl px-4 p-2 mb-5 text-md font-bold shadow-sm"><img src="assets/pngwing.com (5).png" class="w-8" alt="">Rinterio News</button>
-                    <h2 class="font-bold text-5xl my-3 ">Read Our Articles and News</h2>
-                    <p class="text-sm my-5 w-3/4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                <button class="btn bg-[#acef5f77] inline-flex gap-2 rounded-3xl px-4 p-2 mb-5 text-lg font-bold shadow-sm"><img src="assets/pngwing.com (5).png" class="w-8" alt="">Rinterio News</button>
+                <div class="max-w-2xl">
+                  <h2 class="font-bold text-5xl my-3 ">Read Our Articles and News</h2>
+                  <p class="text-sm my-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+                </div>
             </div>
              <div class="flex max-lg:flex-col justify-center items-center gap-8 ">
                 <div class="card bg-white rounded-xl flex flex-col justify-center items-center bg-base-100 w-96 shadow-xl p-8">
@@ -294,44 +360,90 @@
                   </div>
              </div>
         </section>
-        <section class="c6 mt-10 bg-[url(assets/bg.jpg)] p-10">
-            <div class="flex flex-col items-center text-center py-10  ">
-                <button class="btn-lg bg-[#acef5f77] inline-flex gap-2 rounded-3xl px-4 p-2 mb-5 text-md font-bold shadow-sm"><img src="assets/pngwing.com (5).png" class="w-7" alt="">Let's Connect </button>
-                    <h2 class="font-bold text-5xl my-3 ">Let’s Discuss Next Project</h2>
-                    <p class="text-sm my-5 w-3/4">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-            </div>
-           <div class="flex flex-col justify-center xl:items-center">
-            <div class="grid max-md:grid-cols-1 grid-cols-2 gap-3 p-10">
-              <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm max-w-xl h-14">
-              <input type="text" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="First Name*" />
-              </label>
-              <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm max-w-xl h-14">
-              <input type="text" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="Last Name*" />
-              </label>
-              <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm max-w-xl h-14">
-              <input type="number" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="Phone Number*" />
-              </label>
-              <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm max-w-xl h-14">
-              <input type="email" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="E-mail*" />
-              </label>
-              <label class="input input-bordered md:col-span-2 flex  items-center gap-2 p-5 rounded-3xl bg-white shadow-sm max-w-full h-60 ">
-              <input type="text" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2 " placeholder="Write your massage here" />
-              </label>
-              <!-- <label for="submit" class="input input-bordered   md:col-span-2 text-sm flex items-center gap-2 p-3 rounded-3xl bg-[#ABEF5F] shadow-sm max-w-full h-14">
-                <input type="submit" class="grow w-full text-gray-900 h-full rounded-3xl p-2" value="Send Mail">
-                </label> -->
-                <button type="button" class="font-bold inline-flex items-center justify-center md:col-span-2 text-sm flex items-center gap-2 p-3 rounded-3xl bg-[#ABEF5F] shadow-sm max-w-full h-14 "> Send Mail<div class="bg-black w-6 h-6 rounded-full"><img src="assets/arrow.png" class="max-w-full p-1" alt=""></div></button>
+        <!--Login -->
+         <section id="login" class="">
+          <div class="hero bg-white min-h-screen">
+            <div class="hero-content flex-col lg:flex-row-reverse gap-10 gap-x-20">
               
+              <div class="text-center lg:text-left max-w-xl">
+                <div class="relative -left-16 max-lg:left-32"><img src="assets/Vector.png" alt=""></div>
+                <a class="link link-hover bg-white inline-flex gap-2 max-w-52 rounded-lg pt-3 text-md font-bold shadow-sm">Fill the form</a>
+                <h1 class="text-5xl font-bold">Login now!</h1>
+                <p class="py-6">
+                  Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                  quasi. In deleniti eaque aut repudiandae et a id nisi.
+                </p>
+              </div>
+              <div class="card bg-gradient-to-r from-[#acef5ff2] to-[#acef5fb6] w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Email</span>
+                    </label>
+                    <input type="email" placeholder="email" class="input input-bordered" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Password</span>
+                    </label>
+                    <input type="password" placeholder="password" class="input input-bordered" required />
+                    <label class="label">
+                      <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                    </label>
+                  </div>
+                  <div class="form-control mt-6">
+                    <button herf="#login" class=" btn bg-black text-[#ABEF5F] p-2 px-3 hover:bg-[#4d6433f7] hover:text-black rounded-2xl flex gap-2 items-center font-extrabold w-fulll "><div class="bg-[#ABEF5F] border border-4 border-black w-8 h-8 rounded-full"><img src="assets/pngwing.com (5).png" class="max-w-full" alt=""></div> Login For Consult </button>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
-         
+         </section>
+        <!-- new project section  -->
+        <section class="c7 " id="contact">
+           <div class="bg-[url(assets/bg.jpg)] flex flex-col justify-center items-center py-10 px-5 max-w-full">
+            <div class="flex flex-col items-center text-center py-10  ">
+              <button class="btn bg-[#acef5f77] inline-flex gap-2 rounded-3xl px-4 p-2 mb-5 text-lg font-bold shadow-sm"><img src="assets/pngwing.com (5).png" class="w-7" alt="">Let's Connect </button>
+           <div class="max-w-2xl">
+            <h2 class="font-bold text-5xl my-3 ">Let’s Discuss Next Project</h2>
+            <p class="text-sm my-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+           </div>
+          </div>
+         <div class="flex flex-col justify-center items-center">
+          <div class="grid max-md:grid-cols-1 grid-cols-2 gap-3 p-5">
+            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm w-96 h-14">
+            <input type="text" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="First Name*" />
+            </label>
+            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm w-96 h-14">
+            <input type="text" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="Last Name*" />
+            </label>
+            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm w-96 h-14">
+            <input type="number" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="Phone Number*" />
+            </label>
+            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm w-96 h-14">
+            <input type="email" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="E-mail*" />
+            </label>
+            <label class="input input-bordered md:col-span-2 flex  items-center gap-2 p-5 rounded-3xl bg-white shadow-sm max-w-full h-60 ">
+            <input type="text" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2 " placeholder="Write your massage here" />
+            </label>
+            <!-- <label for="submit" class="input input-bordered   md:col-span-2 text-sm flex items-center gap-2 p-3 rounded-3xl bg-[#ABEF5F] shadow-sm max-w-full h-14">
+              <input type="submit" class="grow w-full text-gray-900 h-full rounded-3xl p-2" value="Send Mail">
+              </label> -->
+              <button type="button" class="font-bold inline-flex items-center justify-center md:col-span-2 text-lg flex items-center gap-2 p-3 rounded-3xl bg-[#ABEF5F] shadow-sm max-w-full h-14 "> Send Mail<div class="bg-black w-6 h-6 rounded-full"><img src="assets/arrow.png" class="max-w-full p-1" alt=""></div></button>
+            
+        </div>
+       
+         </div>
            </div>
         </section>
     </main>
     <footer class="bg-[#1C1C1C]">
       <div class="flex flex-col justify-center items-center text-center gap-y-5 p-10 text-gray-300">
-        <h3 class="text-4xl font-extrabold inline-flex items-center gap-2"><div class="bg-[#ABEF5F] w-8 h-8 rounded-full"><img src="assets/pngwing.com (5).png" class="max-w-full py-1" alt=""></div>Rinterio</h3>
-        <p class="text-sm">
-          The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents. </p>
+        <div class="max-w-xl">
+          <h3 class="text-4xl font-extrabold inline-flex items-center gap-2"><div class="bg-[#ABEF5F] w-8 h-8 rounded-full"><img src="assets/pngwing.com (5).png" class="max-w-full py-1" alt=""></div>Rinterio</h3>
+          <p class="text-sm my-5">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents. </p>
+        </div>
         <div class=" flex justify-around max-md:flex-col gap-y-3 gap-x-8">
           <a class="link link-hover"> Home</a>
           <a class="link link-hover"> Services</a>
