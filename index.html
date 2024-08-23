@@ -247,9 +247,9 @@
                 </div>
             <div class="flex flex-col justify-center items-center gap-y-8">
                 <div class="grid grid-cols-3 max-lg:grid-cols-1 gap-10 px-10 max-w-7xl "  >
-                    <div class="card card-side col-span-2 flex justify-between items-center gap-8 bg-base-100 shadow-xl ">
+                    <div class="card card-side col-span-2 flex max-md:flex-col gap-8 bg-base-100 shadow-xl ">
                         <figure>
-                          <img src="assets/img1.png" class="w-full h-60 " alt="Movie"/>
+                          <img src="assets/img1.png" class="w-full h-60 rounded-2xl" alt="Movie"/>
                         </figure>
                         <div class="card-body h-60 ">
                           <h2 class="card-title font-bold text-xl ">Commercial</h2>
@@ -265,11 +265,11 @@
                 <div class="grid grid-cols-3 max-lg:grid-cols-1 gap-8 justify-around px-10 max-w-7xl">
                     <div class="col-span-2 flex max-lg:flex-col justify-between gap-8">
                         <div class="rounded-sm"><img src="assets/img3.png" alt=" " class="w-full h-60"> </div>  
-                    <div class="card card-side flex items-center gap-5  bg-base-100 shadow-xl">
+                    <div class="card card-side flex max-md:flex-col gap-5 bg-base-100 shadow-xl">
                         <figure>
-                          <img src="assets/img4.png" class="w-full h-60" alt="Movie"/>
+                          <img src="assets/img4.png" class="w-full h-60 rounded-3xl " alt="Movie"/>
                         </figure>
-                        <div class="card-body h-60">
+                        <div class="card-body h-60 w-3/4">
                           <h2 class="card-title font-bold text-xl">Commercial</h2>
                           <p class="my-2">The barn house captivates with its blend of rustic charm and modern. </p>
                           <div class="card-actions justify-start">
@@ -283,15 +283,15 @@
             </div>
         </section>
         <!-- news section  -->
-        <section class="c6 mt-20 bg-[#F4F4F4] py-10 " id="news">
-            <div class="flex flex-col items-center text-center py-10  ">
+        <section class="c6 mt-20 bg-[#F4F4F4] py-10 " id="news px-5">
+            <div class="flex flex-col items-center text-center py-10  px-5">
                 <button class="btn bg-[#acef5f77] inline-flex gap-2 rounded-3xl px-4 p-2 mb-5 text-lg font-bold shadow-sm"><img src="assets/pngwing.com (5).png" class="w-8" alt="">Rinterio News</button>
                 <div class="max-w-2xl">
                   <h2 class="font-bold text-5xl my-3 ">Read Our Articles and News</h2>
                   <p class="text-sm my-5">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
                 </div>
             </div>
-             <div class="flex max-lg:flex-col justify-center items-center gap-8 ">
+             <div class="flex max-lg:flex-col justify-center items-center gap-8 px-10">
                 <div class="card bg-white rounded-xl flex flex-col justify-center items-center bg-base-100 w-96 shadow-xl p-8">
                     <figure>
                       <img
@@ -361,12 +361,12 @@
              </div>
         </section>
         <!--Login -->
-         <section id="login" class="">
+         <section id="login mx-2" class="">
           <div class="hero bg-white min-h-screen">
             <div class="hero-content flex-col lg:flex-row-reverse gap-10 gap-x-20">
               
               <div class="text-center lg:text-left max-w-xl">
-                <div class="relative -left-16 max-lg:left-32"><img src="assets/Vector.png" alt=""></div>
+                <div class="relative -left-16 max-sm:left-16 max-lg:left-36"><img src="assets/Vector.png" alt=""></div>
                 <a class="link link-hover bg-white inline-flex gap-2 max-w-52 rounded-lg pt-3 text-md font-bold shadow-sm">Fill the form</a>
                 <h1 class="text-5xl font-bold">Login now!</h1>
                 <p class="py-6">
@@ -411,16 +411,16 @@
           </div>
          <div class="flex flex-col justify-center items-center">
           <div class="grid max-md:grid-cols-1 grid-cols-2 gap-3 p-5">
-            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm w-80 h-14">
+            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm min-w-80 h-14">
             <input type="text" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="First Name*" />
             </label>
-            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm w-80 h-14">
+            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm min-w-80 h-14">
             <input type="text" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="Last Name*" />
             </label>
-            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm w-80 h-14">
+            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm min-w-80 h-14">
             <input type="number" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="Phone Number*" />
             </label>
-            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm w-80 h-14">
+            <label class="input input-bordered text-sm flex items-center gap-2 p-3 rounded-3xl bg-white shadow-sm min-w-80 h-14">
             <input type="email" id="" name="" class="grow w-full text-gray-900 h-full rounded-3xl p-2" placeholder="E-mail*" />
             </label>
             <label class="input input-bordered md:col-span-2 flex  items-center gap-2 p-5 rounded-3xl bg-white shadow-sm max-w-full h-60 ">
